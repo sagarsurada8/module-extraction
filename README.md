@@ -2,8 +2,6 @@
 
 Extract module structure from documentation websites automatically using AI or local rule-based extraction
 
----
-
 ## Installation
 
 ### Prerequisites
@@ -12,32 +10,9 @@ Extract module structure from documentation websites automatically using AI or l
 ### Setup
 
 1. **Clone or navigate to project directory:**
-```bash
-cd d:\SAGAR\pulse-module-extractor
-```
-
 2. **Create virtual environment (optional but recommended):**
-```bash
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
-```
-
 3. **Install dependencies:**
-```bash
-pip install -r requirements.txt
-```
-
-4. **Configure API keys (optional for OpenAI):**
-```bash
-# Edit .env file
-OPENAI_API_KEY=sk-proj-YOUR_KEY_HERE
-OPENAI_MODEL=gpt-4
-```
-
----
+4. **Configure API keys (optional for OpenAI):
 
 ## Usage
 
