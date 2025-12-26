@@ -174,46 +174,8 @@ OPENAI_MODEL=gpt-4
 # Groq (free limited trials)
 GROQ_API_KEY=your-groq-key
 GROQ_MODEL=llama-3.1-70b-stable
-```
+``  
 
-### Crawling Parameters
-
-Adjust in command-line or function calls:
-
-```bash
---depth N       # How deep to crawl (1 = same page + direct links)
---pages N       # Max pages per URL (balance between coverage and time)
---chars N       # Chars extracted per page (higher = more context)
-```
-
----
-
-```
-
----
-
-## Error Handling
-
-### Common Issues
-
-| Error | Cause | Solution |
-|-------|-------|----------|
-| `No valid URLs provided` | Invalid URL format | Check URL syntax, ensure protocol included |
-| `Connection Error` | Website unreachable | Check internet, verify URL is accessible |
-| `Timeout` | Page loading took >15s | Try reducing `--pages` or `--depth` |
-| `401 Unauthorized` | Invalid OpenAI key | Rotate key in OpenAI Dashboard |
-| `No modules extracted` | Page format not recognized | App falls back to local extraction automatically |
-
-### Logging
-
-Enable detailed logging:
-
-```python
-import logging
-logging.basicConfig(level=logging.DEBUG)
-```
-
----
 
 ## Performance Notes
 
@@ -276,28 +238,3 @@ To improve content extraction for specific sites:
 2. Add site-specific CSS selectors or patterns
 3. Test with target site
 
----
-
-
-```
-
----
-
-## License
-
-MIT License - Feel free to use and modify for your projects.
-
----
-
-## Support
-
-For issues or questions:
-1. Check the USER_GUIDE.md
-2. Review the examples above
-3. Check .env configuration
-4. Enable logging for debugging
-5. Review error messages in console output
-
----
-
-**Happy Extracting! 📦**
