@@ -1,0 +1,26 @@
+## Project Structure
+
+```
+pulse-module-extractor/
+├── app.py                          # Streamlit web interface
+├── module_extractor.py             # Main CLI & extraction logic
+├── requirements.txt                # Python dependencies
+├── .env                           # API key configuration
+├── USER_GUIDE.md                  # User documentation
+├── README.md                      # This file
+│
+├── crawler/
+│   ├── crawler.py                 # Website crawling with retries
+│   └── url_validator.py           # URL validation & normalization
+│
+├── processor/
+│   └── content_extractor.py       # HTML parsing & content extraction
+│
+├── ai/
+│   └── module_inference.py        # Module detection & description generation
+│
+├── output/
+│   └── result.json               # Default output location
+│
+└── test_*.py                      # Test scripts
+```
